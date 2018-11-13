@@ -15,6 +15,7 @@ A react route that redirects to a different path when the user is not authentica
 
 ```javascript
 import React from "react"
+import { connect } from "react-redux"
 import { Switch } from "react-router-dom"
 import ProtectedRoute from "@alexseitsinger/protected-route"
 
