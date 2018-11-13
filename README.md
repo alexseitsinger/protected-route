@@ -21,7 +21,9 @@ import ProtectedRoute from "@alexseitsinger/protected-route"
 import HomePage from "../pages/home"
 
 const ConnectedProtectedRoute = connect((state) => {
-	isAuthenticated: state.auth.isAuthenticated,
+	return {
+		isAuthenticated: state.auth.isAuthenticated
+	}
 })(ProtectedRoute)
 
 export default (
